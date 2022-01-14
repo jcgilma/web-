@@ -20,6 +20,7 @@
     box-sizing: border-box; 
   }
 
+  /* familia, grosor, tamaño, interlineado fuente para el body. Anchura máxima de la etiqueta body del 100% .*/
   body {
     margin: 0;
     font-family: "Raleway", sans-serif;
@@ -31,71 +32,35 @@
     max-width:100%;
   }
 
-  .descripcion {
-    font-size: 2rem;
-    line-height: 1.5;
-  }
-  
+
+  /* Anchura máxima para main del 100% y centrar el contenido */
   main {
-      max-width: 100%;
-      margin:0 auto;
-  }
-
-  .container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 20px;
-    padding-left: 20px;
+    max-width: 100%;
+    margin:0 auto;
   }
 
 
-
-
-  a {
-    color: var(--secondary-color);
-    font-size: 1.6rem;
-    font-weight: 600;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: var(--dark-color);
-  }
-
-  p{
-    margin-bottom: 20px;
-  }
-
-  h2 {
-    text-align: center;
-    margin-bottom: 0.75rem;
-    font-size:2.2rem; 
-  }
-
-  h3 {
-      line-height: 1.1;
-      padding-bottom: 38px;
-  }
-  h3 a{
-    text-decoration: none;
-    font-size:2rem; 
+  /* padding para los contenedores con esta etiqueta */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
-figcaption {
-    font-size: 1.4rem;
-    padding-top:20px;
-    padding-bottom:20px;
+.featured {
+  padding-top: 65px;
+  padding-bottom:80px;
+
 }
 
+ 
 
-  .featured {
-      padding-top: 65px;
-      padding-bottom:80px;
+  /* Estilos para "Logo" No hay planeta B 1,5 grados */
 
-  }
-  nav {
-    text-align:center;
-    padding-bottom: 32px;
+  .logo {
+    padding-top:50px;
+    padding-bottom:25px;
   }
 
   .lema {
@@ -110,102 +75,189 @@ figcaption {
     margin-block-start:0em;
     margin-block-end:0em;
   }
- 
-    
+
   .link-titular {
     color: var(--dark-color);
     text-decoration:none;
   }
 
-  .logo {
-    padding-top:50px;
-    padding-bottom:25px;
-  }
+ 
 
-  header.menuheader{
-    background-color: var(--light-text-color);
-    box-shadow: 0 4px 8px 0 rgba(13, 10, 44, 0.04); 
-  }
+  /* Estilos de texto, tamaño, color para titulares, párrafos, enlaces, figcaption */
 
-  header.menuheader .menu-links li {
-    font-weight: 800; 
-    text-transform: uppercase;
-  }
-        
-  header.menuheader .menu-links li a {
-    color: var(--dark-color);
-    text-decoration: none;
-    font-weight: 800;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 0.75rem;
+    font-size:2.2rem; 
   }
   
-  header.menuheader .menu-links li a:hover {
-    color: rgba(0,0,0,0.5);
+  h3 {
+      line-height: 1.1;
+      padding-bottom: 38px;
+  }
+  h3 a{
+    text-decoration: none;
+    font-size:2rem; 
   }
 
-
-  footer .social-links li{
-    display: inline-block;
-    margin-top:35px;
-    margin-bottom:35px;
-  }
-
-  footer {
-    text-align: center;
-    background-color: var(--dark-color);
-    color: var(--light-text-color);
+  h4 {
+    text-transform: uppercase;
     font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  a {
+    color: var(--secondary-color);
     font-size: 1.6rem;
-    padding-top:64px;
-    padding-bottom:40px;
-
+    font-weight: 600;
+    text-decoration: none;
   }
 
-  footer li a {
-    color: var(--light-text-color);
-    ext-decoration: none;
-  }
-
-  footer li a:hover {
-        color: var(--secondary-color);
+  a:hover {
+  color: var(--dark-color);
   }
 
 
-
-
-
-  footer .container{
-    max-width: 400px;
-    margin:0 auto;
+  p{
+  margin-bottom: 20px;
   }
 
-  ul, li {
-    list-style: none;
-    padding: 0;
-    margin: 0; 
-    line-height: 1.4;
+
+
+  figcaption {
+    font-size: 1.4rem;
+    padding-top:20px;
+    padding-bottom:20px;
   }
 
-  footer .social {
-    width: 40px;
-  }
 
-  footer .social-youtube {
-    height: 40px;
+nav {
+  text-align:center;
+  padding-bottom: 32px;
 }
 
 
+ 
+
+/* Estilos para el header, estilos para lista no ordenada del menú */
+
+header.menuheader{
+  background-color: var(--light-text-color);
+  box-shadow: 0 4px 8px 0 rgba(13, 10, 44, 0.04); 
+}
+
+header.menuheader .menu-links li {
+  font-weight: 800; 
+  text-transform: uppercase;
+}
+      
+header.menuheader .menu-links li a {
+  color: var(--dark-color);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+header.menuheader .menu-links li a:hover {
+  color: rgba(0,0,0,0.5);
+}
+
+header.menuheader .menu-links li.active a {
+  color: var(--secondary-color);
+}
+
+
+/* Estilos para el footer: */
+
+footer .social-links li{
+  display: inline-block;
+  margin-top:35px;
+  margin-bottom:35px;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--dark-color);
+  color: var(--light-text-color);
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding-top:64px;
+  padding-bottom:40px;
+
+}
+
+footer li a {
+  color: var(--light-text-color);
+  text-decoration: none;
+}
+
+footer li a:hover {
+      color: var(--secondary-color);
+}
+
+
+footer .container{
+  max-width: 400px;
+  margin:0 auto;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+  line-height: 1.4;
+}
+
+footer .social {
+  width: 40px;
+}
+
+footer .social-youtube {
+  height: 40px;
+}
 
 img.social:hover {
-    opacity: 0.7;
-    filter: alpha(opacity=100);
-    zoom: 1;
+  opacity: 0.7;
+  filter: alpha(opacity=100);
+  zoom: 1;
 }
 
 img.social-youtube:hover {
-    opacity: 0.7;
-    filter: alpha(opacity=100);
-    zoom: 1;
+  opacity: 0.7;
+  filter: alpha(opacity=100);
+  zoom: 1;
 }
+
+span {
+  font-style: italic;
+ }
+
+/* Otros estilos comunes */
+
+.img-fluid {
+  max-width: 100%;
+}
+
+article{
+  margin-top:38px;
+}
+
+
+
+
+
+
+    /* Reglas para página INDEX */
+
+
+  /*  */
+  .descripcion {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  
+
+
 
 .img-header{
     background:url(../images/bg-hero-home.jpg) 100% 100% no-repeat;
@@ -219,24 +271,30 @@ img.social-youtube:hover {
 }
 
 
-.title {
+
+
+ 
+
+  /* Estilos específicos para la Home */
+
+  
+  .title {
     font-weight: 400;
     font-size: 3.8rem;
     margin-bottom: 0.75rem; 
     color:var(--light-text-color);
   }
 
- 
-
-  /* Home */
-
- .leermas {
+  /* Estilo para enlace leer más */
+  .leermas {
     border:none;
     padding-bottom:0.5rem;
     border-bottom: 2px dotted var(--secondary-color);
-}
+  }
 
-.formulario {
+
+  /* Estilo para el formulario newsletter */
+  .formulario {
     background-color: var(--form-background);
     padding-top: 80px;
     padding-bottom: 100px;
@@ -244,17 +302,9 @@ img.social-youtube:hover {
     margin-left: auto;
     padding-right: 50px;
     padding-left: 50px;
-}
-
-.img-fluid {
-    max-width: 100%;
   }
 
-article{
-    margin-top:38px;
-}
-
-.form-control {
+  .form-control {
     display: block;
   width: 100%;
   height: calc(1.5em + 0.75rem + 2px);
@@ -266,27 +316,27 @@ article{
   border: 1px solid #000000;
   border-radius: 2px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; 
-}
+  }
 
-input{
+  input{
     margin-bottom: 26px;
-}
+  }
 
-.form-footer, .form-footer a{
+  .form-footer, .form-footer a{
     font-size: 1rem;
     font-weight: 600;
-}
+  }
 
-.boton{
+  .boton{
     padding: 1.5rem 2.5rem;;
     background-color: var(--secondary-color);
     color: var(--light-text-color);
     border: none;
     font-size: 1.5rem;
     text-transform: uppercase;
-}
+  }
 
-
+/* Reglas específicas para INDEX y elementos comunes de todas las páginas para pantallas superiores a 1200px */
 
 @media (min-width: 1200px){
 
@@ -370,7 +420,7 @@ input{
     h3 {
         padding-bottom: 16px;
     }
-
+    
     body {
         font-size: 1.2rem;
     }
@@ -437,9 +487,7 @@ input{
   }
 
 
-  header.menuheader .menu-links li.active a {
-    color: var(--secondary-color);
-  }
+/* Reglas específicas para la página de Sintomas*/
 
   .box {
     background-color:var(--light-text-color);
@@ -447,14 +495,12 @@ input{
     padding: 50px 30px 30px 30px;
   }
 
- span {
-  font-style: italic;
- }
-
 .sintomas {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
+/* Reglas específicas para pantallas superiores a 1200px de la página de SINTOMAS */
 
 @media (min-width: 1200px){
   .box {
@@ -467,6 +513,9 @@ input{
   }
 
 }
+
+
+/* Reglas específicas para la página VIDEO */
 
 .video {
   position: relative;
@@ -494,6 +543,8 @@ input{
   width: 100%;
 }
 
+/* Reglas específicas para pantallas superiores a 1200px de la página de VIDEOS */
+
 @media (min-width: 1200px){
   .videos {
     display:grid;
@@ -508,28 +559,22 @@ input{
   }
 
 
+  /* Reglas específicas para la página COP26*/
 
   .subtitulo {
     font-weight: 600;
     padding-top: 20px;
   }
 
-
-h4 {
-text-transform: uppercase;
-font-weight: 600;
-font-size: 1.2rem;
-}
-
-li.lista{
+  li.lista{
   list-style: decimal;
   padding: 0rem;
   margin: 1rem; 
   line-height: 1.4;
   display: list-item;
-}
+  }
 
-blockquote {
+  blockquote {
   background-color:#ffffff; 
   padding-block-end: 1rem;
   padding-block-start: 1rem;
@@ -537,12 +582,14 @@ blockquote {
   padding-inline-start: 2.8rem;
   margin-block-end: 5rem;
   border-left: 5px solid #ff1616;  
-}
+  }
 
-blockquote em{
+  blockquote em{
   text-align: left;
   font-weight: 600;
-}
+  }
+
+/* Reglas específicas para pantallas superiores a 1200px de la página de COP */
 
 @media (min-width: 1200px){
   .cop{
@@ -572,7 +619,5 @@ blockquote em{
     line-height: 1.4;
     display: list-item;
   }
-
-
 }
 

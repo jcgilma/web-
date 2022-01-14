@@ -336,7 +336,10 @@ article{
     text-transform: uppercase;
   }
 
-/* Reglas específicas para INDEX y elementos comunes de todas las páginas para pantallas superiores a 1200px */
+/* Reglas específicas para INDEX y elementos comunes de todas las páginas para pantallas superiores a 1200px como hemos indicado en el media queries.
+ A diferencia de la verisón mobile, hemos especificado como se debe visualizar el menú del footer en una sola línea y como visualizamos en tres columnas 
+ las noticias */
+
 
 @media (min-width: 1200px){
 
@@ -361,6 +364,7 @@ article{
         margin-block-end:-0.6em;
       }
 
+    /* Como se visualiza el footer en una sola línea */
     footer ul, li {
         display: inline-block;
         padding-right: 26px;
@@ -397,6 +401,7 @@ article{
         font-size: 2.5rem;
     }
 
+    /* Como se visualiza en tres columnas las notícias */
     .columns {
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -457,6 +462,7 @@ article{
         font-size: 1rem;
     }
 
+    /* Como se visualiza el contenedor footer */
     footer .container {
         max-width: 1150px;
         display: grid;
@@ -502,6 +508,8 @@ article{
 
 /* Reglas específicas para pantallas superiores a 1200px de la página de SINTOMAS */
 
+/* Aquí no he conseguido que visualice igual que en la propuesta incial en pantallas superiores a 1200 px. 
+No he podido reducir el tamaño de las cajas ni disponerlas como en la propuesta  */
 @media (min-width: 1200px){
   .box {
     display:flex;
@@ -545,6 +553,7 @@ article{
 
 /* Reglas específicas para pantallas superiores a 1200px de la página de VIDEOS */
 
+/* Como se visualizan los videos en dos columnas gracias a display grid, con una separación de 20px */
 @media (min-width: 1200px){
   .videos {
     display:grid;
@@ -590,6 +599,8 @@ article{
   }
 
 /* Reglas específicas para pantallas superiores a 1200px de la página de COP */
+
+/* Como se visualiza el aside y el contenido principal dividiéndolo en dos columnas, gracias a display grid y la disposición elegida para cada parte */
 
 @media (min-width: 1200px){
   .cop{
